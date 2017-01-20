@@ -12,7 +12,7 @@ $("#secondButton").on( "click", function(  ) {
      document.getElementById("secondDiv").innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", "https://kjh311.github.io/ajax_tutorial/second.html", true);
+  xhttp.open("GET", "https://kjh311.github.io/ajax_tutorial/second.html #firstCode", true);
   xhttp.send();
 });
 
