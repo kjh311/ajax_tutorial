@@ -11,10 +11,27 @@
 </head>
 <body>
 <h1>AJAX TESTING</h1>
+</br>
 
   <button id="firstButton"><h2>CLICK TO LOAD HTML WITH $.load()</h2></button>
+  <p class="code">$("#firstButton").on( "click", function(  ) {
+  $( "#firstDiv" ).load( "https://kjh311.github.io/ajax_tutorial/first.html" );
+});</p>
+
 <div id="firstDiv"></div>
 
+<button id="secondButton"><h2>CLICK TO LOAD HTML WITH</h2></button>
+<p class="code">$("#secondButton").on( "click", function(  ) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("secondDiv").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "https://kjh311.github.io/ajax_tutorial/second.html", true);
+  xhttp.send();
+});</p>
+<div id="secondDiv"></div>
 
 
 </body>
