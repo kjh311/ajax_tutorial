@@ -23,12 +23,12 @@ $("#thirdButton").click(function(event){
         $('#thirdDiv').append('<p> Sex: ' + jd.sex+ '</p>');
         $('#thirdDiv').append('<p> Description: ' + jd.Description+ '</p>');
     });
+
+     $( "#thirdDiv2" ).load( "https://kjh311.github.io/ajax_tutorial/second.html #json-code", function( html ) {
+    });
   });
 
-$("#thirdButton").click(function(event){
-  $( "#thirdDiv2" ).load( "https://kjh311.github.io/ajax_tutorial/second.html #json-code", function( html ) {
-    });
-});
+
 
 
 });
