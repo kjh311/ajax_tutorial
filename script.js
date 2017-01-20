@@ -39,9 +39,10 @@ $("#secondButton").on( "click", function(  ) {
 
 $("#thirdButton").click(function(event){
                $.getJSON("https://kjh311.github.io/ajax_tutorial/third.json", function(jd) {
-                  $('#stage').html('<p> Name: ' + jd.name + '</p>');
-                  $('#stage').append('<p>Age : ' + jd.age+ '</p>');
-                  $('#stage').append('<p> Sex: ' + jd.sex+ '</p>');
+                  $('#thirdDiv').html('<p> Name: ' + jd.name + '</p>');
+                  $('#thirdDiv').append('<p>Age : ' + jd.age+ '</p>');
+                  $('#thirdDiv').append('<p> Sex: ' + jd.sex+ '</p>');
+                  $('#thirdDiv').append('<p> Description: ' + jd.Description+ '</p>');
     });
   });
 
