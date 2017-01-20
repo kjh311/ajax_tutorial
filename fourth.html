@@ -1,1 +1,18 @@
-<h1>HTML LOADED THROUGH $.ajax</h1>
+<h1>HTML LOADED THROUGH $.get</h1>
+
+<h3 class="code">
+$("#fourthButton").on( "click", function(  ) {
+    $.get( "https://kjh311.github.io/ajax_tutorial/fourth.html", function( data ) {
+      $( "#fourthDiv" ).html( data );
+    });
+   });
+</h3>
+
+
+<style>
+ .code{
+  background-color: lightgrey;
+  padding: 5px;
+  word-wrap: break-word;
+}
+</style>

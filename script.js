@@ -30,7 +30,6 @@ $("#thirdButton").click(function(event){
 $("#fourthButton").on( "click", function(  ) {
     $.get( "https://kjh311.github.io/ajax_tutorial/fourth.html", function( data ) {
       $( "#fourthDiv" ).html( data );
-      alert( "Load was performed." );
     });
    });
 
