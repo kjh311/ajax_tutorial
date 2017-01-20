@@ -17,12 +17,13 @@ $("#secondButton").on( "click", function(  ) {
 });
 
 $("#thirdButton").on( "click", function(  ) {
-    $.getJSON("https://kjh311.github.io/ajax_tutorial/third.json", function(jd){
-         $('#thirdDiv').html('<p> Color Name: ' + jd.colorName + '</p>');
-          $('#thirdDiv').append('<p>Hex Value : ' + jd.hexValue+ '</p>');
+$.getJSON("https://kjh311.github.io/ajax_tutorial/third.json", function(jd){
+        $.each(result, function(i, field){
+            $('#thirdDiv').html('<p> Color Name: ' + jd.colorName + '</p>');
+            $('#thirdDiv').append('<p>Hex Value : ' + jd.hexValue+ '</p>');
         });
     });
-
+});
 
 
 });
