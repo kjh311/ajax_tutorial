@@ -31,12 +31,13 @@ $("#secondButton").on( "click", function(  ) {
 //     console.log(data);
 // });
 // });
-
+$("#thirdButton").on( "click", function(  ) {
     $.getJSON("https://kjh311.github.io/ajax_tutorial/third.json", function (result) {
         result.jobs.map(function (v) {
             $('#thirdDiv').append(v.colorName);
             $('#thirdDiv').append(v.hexValue);
 
         });
+    });
     });
 });
