@@ -12,6 +12,17 @@
 });</p>
 
 
+<div id="json-code">
+  <p class="code">$("#thirdButton").click(function(event){
+     $.getJSON("https://kjh311.github.io/ajax_tutorial/third.json", function(jd) {
+        $('#thirdDiv').html('<p> Name: ' + jd.name + '</p>');
+        $('#thirdDiv').append('<p>Age : ' + jd.age+ '</p>');
+        $('#thirdDiv').append('<p> Sex: ' + jd.sex+ '</p>');
+        $('#thirdDiv').append('<p> Description: ' + jd.Description+ '</p>');
+    });
+  });</p>
+</div>
+
 <style>
  .code{
   background-color: lightgrey;
