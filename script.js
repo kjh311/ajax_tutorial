@@ -17,9 +17,9 @@ $("#secondButton").on( "click", function(  ) {
 });
 
 $("#thirdButton").on( "click", function(  ) {
-$.getJSON("https://kjh311.github.io/ajax_tutorial/third.json", function(result){
-        $.each(result, function(i, field){
-            $("#thirdDiv").append(field + " ");
+    $.getJSON("https://kjh311.github.io/ajax_tutorial/third.json", function(jd){
+         $('#thirdDiv').html('<p> Color Name: ' + jd.colorName + '</p>');
+          $('#thirdDiv').append('<p>Hex Value : ' + jd.hexValue+ '</p>');
         });
     });
 });
