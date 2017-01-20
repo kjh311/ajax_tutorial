@@ -17,7 +17,7 @@ $("#secondButton").on( "click", function(  ) {
 });
 
 $("#thirdButton").on( "click", function(  ) {
-$.getJSON("third.json", function(result){
+$.getJSON("https://kjh311.github.io/ajax_tutorial/third.json", function(result){
         $.each(result, function(i, field){
             $("#thirdDiv").append(field + " ");
         });
