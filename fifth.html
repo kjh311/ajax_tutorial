@@ -1,0 +1,21 @@
+<h1>HTML LOADED WITH $.ajax</h1>
+
+<h3 class="code">
+  $.ajax("https://kjh311.github.io/ajax_tutorial/fifth.html", {
+      success: function(data) {
+         $('#fifthDiv').html($(data).find('#fifthDiv *'));
+         console.log('The page has been successfully loaded');
+      },
+      error: function() {
+         alert('An error occurred');
+      }
+   });
+</h3>
+
+<style>
+ .code{
+  background-color: lightgrey;
+  padding: 5px;
+  word-wrap: break-word;
+}
+</style>
