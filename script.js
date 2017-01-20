@@ -33,15 +33,16 @@ $("#fourthButton").on( "click", function(  ) {
     });
    });
 
-
+$("#fifthButton").on( "click", function(  ) {
 $.ajax("https://kjh311.github.io/ajax_tutorial/fifth.html", {
       success: function(data) {
-         $('#fifthDiv').html($(data).find('#fifthDiv *'));
+         $('#fifthDiv').html($(data);
          console.log('The page has been successfully loaded');
       },
       error: function() {
-         alert('An error occurred');
+         console.log('An error occurred');
       }
+   });
    });
 
 
