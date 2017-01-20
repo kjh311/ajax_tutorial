@@ -23,7 +23,27 @@ $("#secondButton").on( "click", function(  ) {
 //             $('#thirdDiv').append('<p>Hex Value : ' + result.hexValue+ '</p>');
 //         });
 //     });
+
+// $.getJSON( "https://kjh311.github.io/ajax_tutorial/third.json", function( data ) {
+//   var items = [];
+//   $.each( data, function( key, val ) {
+//     items.push( "<li id='" + key + "'>" + val + "</li>" );
+//   });
+
+//   $( "<ul/>", {
+//     "class": "my-new-list",
+//     html: items.join( "" )
+//   }).appendTo( "body" );
 // });
+// });
+
+$("#thirdButton").click(function(event){
+               $.getJSON("https://kjh311.github.io/ajax_tutorial/third.json", function(jd) {
+                  $('#stage').html('<p> Name: ' + jd.name + '</p>');
+                  $('#stage').append('<p>Age : ' + jd.age+ '</p>');
+                  $('#stage').append('<p> Sex: ' + jd.sex+ '</p>');
+    });
+  });
 
 // $("#thirdButton").on( "click", function(  ) {
 // $.getJSON('http://query.yahooapis.com/v1/public/yql?q=select%20%2a%20from%20yahoo.finance.quotes%20WHERE%20symbol%3D%27WRC%27&format=json&diagnostics=true&env=store://datatables.org/alltableswithkeys&callback', function(data) {
@@ -31,13 +51,14 @@ $("#secondButton").on( "click", function(  ) {
 //     console.log(data);
 // });
 // });
-$("#thirdButton").on( "click", function(  ) {
-    $.getJSON("https://kjh311.github.io/ajax_tutorial/third.json", function (result) {
-        result.map(function (v) {
-            $('#thirdDiv').append(v.colorName);
-            $('#thirdDiv').append(v.hexValue);
-
-        });
-    });
-    });
+// $("#thirdButton").on( "click", function(  ) {
+// $.getJSON("https://kjh311.github.io/ajax_tutorial/third.json",
+//         function(data){
+//           $.each(data.colorsArrays, function(i,colorsArray){
+//             content = '<p>' + colorsArray.colorName + '</p>';
+//             content += '<p>' + colorsArray.hexValue + '</p>';
+//             $(content).appendTo("#thirdDiv");
+//           });
+//         });
+//     });
 });
