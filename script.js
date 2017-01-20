@@ -12,7 +12,7 @@ $("#secondButton").on( "click", function(  ) {
      document.getElementById("secondDiv").innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", "https://kjh311.github.io/ajax_tutorial/second.html #firstCode", true);
+  xhttp.open("GET", "https://kjh311.github.io/ajax_tutorial/second.html", true);
   xhttp.send();
 });
 
@@ -24,7 +24,7 @@ $("#thirdButton").click(function(event){
         $('#thirdDiv').append('<p> Description: ' + jd.Description+ '</p>');
     });
 
-     $( "#thirdDiv2" ).load( "https://kjh311.github.io/ajax_tutorial/second.html #json-code", function( html ) {
+     $( "#thirdDiv2" ).load( "https://kjh311.github.io/ajax_tutorial/third.html #json-code", function( html ) {
     });
   });
 

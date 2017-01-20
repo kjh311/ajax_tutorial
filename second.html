@@ -1,11 +1,3 @@
-<style>
- .code{
-  background-color: lightgrey;
-  padding: 5px;
-}
-</style>
-
-<div id="firstCode">
 <h1>HTML LOADED!!!!</h1>
 
 <p class="code">$("#secondButton").on( "click", function(  ) {
@@ -18,11 +10,13 @@
   xhttp.open("GET", "https://kjh311.github.io/ajax_tutorial/second.html", true);
   xhttp.send();
 });</p>
-</div>
-
-<div id="json-code" class="code">
-  <p class="code">$("#thirdButton").click(function(event){
-     $.getJSON("https://kjh311.github.io/ajax_tutorial/third.json", function(jd) {$('#thirdDiv').html('<p> Name: ' + jd.name + '</p>');$('#thirdDiv').append('<p>Age : ' + jd.age+ '</p>');$('#thirdDiv').append('<p> Sex: ' + jd.sex+ '</p>');$('#thirdDiv').append('<p> Description: ' + jd.Description+ '</p>');});});</p>
-</div>
 
 
+
+
+<style>
+ .code{
+  background-color: lightgrey;
+  padding: 5px;
+}
+</style>
