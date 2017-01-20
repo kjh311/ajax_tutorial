@@ -34,15 +34,9 @@ $("#fourthButton").on( "click", function(  ) {
    });
 
 $("#fifthButton").on( "click", function(  ) {
-$.ajax("https://kjh311.github.io/ajax_tutorial/fifth.html", {
-      success: function(data) {
-         $('#fifthDiv').html($(data);
-         console.log('The page has been successfully loaded');
-      },
-      error: function() {
-         console.log('An error occurred');
-      }
-   });
+$.ajax({url: "https://kjh311.github.io/ajax_tutorial/fifth.html", success: function(result){
+        $("#fifthDiv").html(result);
+    }});
    });
 
 
