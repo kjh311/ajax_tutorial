@@ -16,8 +16,13 @@ $("#secondButton").on( "click", function(  ) {
   xhttp.send();
 });
 
-
-
+$("#thirdButton").on( "click", function(  ) {
+$.getJSON("third.json", function(result){
+        $.each(result, function(i, field){
+            $("#thirdDiv").append(field + " ");
+        });
+    });
+});
 
 
 });
