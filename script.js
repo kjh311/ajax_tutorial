@@ -22,7 +22,7 @@ $("#thirdButton").on( "click", function(  ) {
           $('#thirdDiv').append('<p>Hex Value : ' + jd.hexValue+ '</p>');
         });
     });
-});
+
 
 
 });
